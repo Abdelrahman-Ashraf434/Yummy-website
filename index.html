@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Images/logo.png" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div
+      class="splash-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div class="side-nav vh-100 position-fixed d-flex top-0 z-3">
+      <div
+        class=" d-flex flex-column justify-content-between py-4 px-2 "
+      >
+        <div class="links">
+          <ul class="list-unstyled overflow-hidden text-white">
+            <li onclick="displaySearchInputs()" class="item-nav">Search</li>
+            <li onclick="getCategories()" class="item-nav">Categories</li>
+            <li onclick="getArea()" class="item-nav">Area</li>
+            <li onclick="getIngredients()" class="item-nav">Ingredients</li>
+            <li onclick="" class="item-nav">Contact Us</li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook text-white"></i>
+            <i class="fa-brands fa-twitter text-white"></i>
+            <i class="fa-solid fa-globe text-white"></i>
+            <div class="footer">
+              <p class="text-white">Copyright © 2019 All Rights <br />Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header d-flex flex-column justify-content-between py-1 px-3 text-center bg-white text-black "
+      >
+        <img class="logo" src="./Images/logo.png" alt="" />
+        <i class="fa-solid icon-nav fa-align-justify fa-2x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row py-4" id="search-items"></div>
+      </div>
+    </section>
+    <section class="">
+      <div class="container">
+        <div class="row mx-3" id="list-items"></div>
+      </div>
+    </section>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+}
+.layer {
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.meal-item {
+  cursor: pointer;
+  overflow: hidden;
+}
+.meal-item:hover .layer {
+  opacity: 0.8;
+  overflow: hidden;
+  top: 0;
+}
+.meal-details h3,
+.meal-details p {
+    color: white;
+}
+.item-nav {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.splash-screen{
+    display: flex;
+    z-index: 1031;
+}
+
+.logo{
+    width: 50px;
+}
+.side-nav{
+    left: -14rem;
+    transition: all 0.8s ease-in-out;
+}
+.expanded{
+    left: 0;
+}
