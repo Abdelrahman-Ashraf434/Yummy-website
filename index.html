@@ -16,16 +16,14 @@
       <i class="fa fa-spinner fa-spin fa-5x"></i>
     </div>
     <div class="side-nav vh-100 position-fixed d-flex top-0 z-3">
-      <div
-        class=" d-flex flex-column justify-content-between py-4 px-2 "
-      >
+      <div class="d-flex flex-column justify-content-between py-4 px-2">
         <div class="links">
           <ul class="list-unstyled overflow-hidden text-white">
             <li onclick="displaySearchInputs()" class="item-nav">Search</li>
             <li onclick="getCategories()" class="item-nav">Categories</li>
             <li onclick="getArea()" class="item-nav">Area</li>
             <li onclick="getIngredients()" class="item-nav">Ingredients</li>
-            <li onclick="" class="item-nav">Contact Us</li>
+            <li onclick="showContacts()" class="item-nav">Contact Us</li>
           </ul>
         </div>
         <div class="nav-footer">
@@ -34,13 +32,15 @@
             <i class="fa-brands fa-twitter text-white"></i>
             <i class="fa-solid fa-globe text-white"></i>
             <div class="footer">
-              <p class="text-white">Copyright © 2019 All Rights <br />Reserved.</p>
+              <p class="text-white">
+                Copyright © 2019 All Rights <br />Reserved.
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="nav-header d-flex flex-column justify-content-between py-1 px-3 text-center bg-white text-black "
+        class="nav-header d-flex flex-column justify-content-between py-1 px-3 text-center bg-white text-black"
       >
         <img class="logo" src="./Images/logo.png" alt="" />
         <i class="fa-solid icon-nav fa-align-justify fa-2x"></i>
@@ -55,7 +55,7 @@
         <div class="row py-4" id="search-items"></div>
       </div>
     </section>
-    <section class="">
+    <section>
       <div class="container">
         <div class="row mx-3" id="list-items"></div>
       </div>
